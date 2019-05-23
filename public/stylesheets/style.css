@@ -1,4 +1,8 @@
-/* The sidebar menu */
+html{
+  background-color: #818181;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .sidebar {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -7,7 +11,7 @@
   top: 0;
   left: 0;
   background-color: #111; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-x: hidden; 
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
 }
@@ -40,10 +44,13 @@
 .openbtn  {
   font-size: 20px;
   cursor: pointer;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  padding: 10px 15px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 10px 13px;
   border: none;
+  display: inline-block;
+  position: sticky;
+  padding-bottom: 30%;
 }
 
 .openbtn:hover {
@@ -52,8 +59,11 @@
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left .5s; /* If you want a transition effect */
-  padding: 20px;
+  width: auto;
+  float: left;
+  /* transition: margin-left .5s; If you want a transition effect */
+  position: sticky;
+  top:0;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -61,9 +71,50 @@
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
-h2, p,h1{
-  padding-left: 10%;
-  padding-right: 10%;
-  position: relative;
-  display: block;
+h1{
+  font-family: 'Times New Roman', Times, serif;
+  font-style: oblique;
+  font-size: 40px;
+  color: rgb(14, 14, 14);
+  background: linear-gradient(rgb(255, 255, 255), rgb(0, 183, 255))
+}
+body:not(#main){
+  text-align: center;
+  background-color:rgb(1, 67, 78);
+  align-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: #111;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 3rem;
+}
+h2{
+  background-color: white;
+  padding-left: 0%;
+  padding-right: 0%;
+  display: inline-block;
+}
+
+h3{
+  background-color: rgb(255, 182, 182);
+  padding-left: 0%;
+  padding-right: 0%;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-size: 25px;
+}
+p, ul, ol{
+
+  text-align: left;
+  background-color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.source{
+  text-indent: -4em;
+  margin: 6em initial;
+  padding-left: 6rem;
+  padding-right: 6rem;
 }

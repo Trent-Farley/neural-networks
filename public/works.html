@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Newsvine.svg/256px-Newsvine.svg.png">
   <title>Neural Networks</title>
 </head>
 
@@ -19,12 +20,71 @@
       
       <div id="main">
         <button class="openbtn" onclick="openNav()" >&#9776; </button>
-
-
       </div>
       <script src="javascripts/flex.js"></script>
     <body>
-        <h2>Collapsed Sidebar</h2>
-        <p>Content...</p>
+        <h1>How It Works</h1>
+        <!-- <img src="http://medtechasia.in/wp-content/uploads/2018/10/neural.jpg" alt="3D model of a Neural Network" > -->
+        <h3><b>Introduction</b></h3>
+        <p>
+            It all starts with the data. The amount of information that the internet 
+            is pumping out per day is incredible. Just on one platform, Instagram has 
+            100 million images uploaded per day. Yet, every time someone searches for 
+            a photo it usually returns a photo almost instantly. This is taken for 
+            granted, but the amount of algorithms and processes going through these
+            photos, videos, gifs, memes, etc is increasing to handle the data.
+        </p>
+        
+        <p>
+            Sorting information is tough. Just thinking about how to sort 100 
+            million of anything is mind-boggling. This task would be impossible 
+            in anyone's lifetime. This is where a framework to sort these items 
+            would be beneficial and if not used, would mean never finding the 
+            photo that you uploaded a week ago. The quickest way to sort this 
+            is to just know where the information is. Much like knowing where 
+            to get socks in the morning, computer scientists have made a neural 
+            network to know where everything is.
+        </p>
+        <h3><b>The Technical Details</b></h3>
+        <p>
+            Neural networks are able to process any information given, 
+            as long as the starting algorithm can handle it. For this 
+            information, however, I will use images at data. Since this 
+            is making up more and more of the internet, the inner workings 
+            of how these get processed are valuable to everyone.
+            There are three different ways to process information:
+          </p> 
+            <ul>
+            <li>NYU Object Recognition Benchmark (NORB)</li>
+            <li>Canadian Institute for Advanced Research (CIFAR10)</li>
+            <li>Mixed National Institute of Standards and Technology (MNST).</li>
+            </ul>
+            <p>
+            Much like children, neural networks are not very smart when they start.
+            These networks must be trained, but not how a person would train a dog
+            or teach a child. The network tries to do something and if it fails,
+            that part of the network is no longer in the next generation. Just like
+            a single person is called an individual, a single part of a network
+            is called a node. After taking all of the better nodes, the network 
+            is trained repeatedly until it is getting all of the answers correct. 
+            </p>
+            <p>
+            The first type, NORB is completely trained within five generations of neurons. The error 
+            rate is around 2.5% which is extraordinary compared to the amount of 
+            data it is fed. Unlike humans, computers do not recognize features as 
+            we do. For example, when a person sees a cat, this is evident because 
+            it has features that place this into our brains. Computers do not work 
+            this way, they require hundreds of thousands of  photos to recognize that 
+            it is a cat. 
+            </p>
+            <img src="/images/network.png" alt="network">
+            <p>
+              As shown above, the evolution of a network starts with a 
+              base amount of nodes. If the goal is completed, the node
+              gets passed to the next generation. Once the network is trained,
+              it can be used for many years, or until it is no longer fast enough.
+              Each generation could have billions of nodes, but for simplicity,
+              this picture just shows generations of two or three nodes. 
+            </p>
 </body>
 </html>
