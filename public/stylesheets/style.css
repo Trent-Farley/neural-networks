@@ -1,7 +1,11 @@
 html{
   background-color: #818181;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 4em;
+  padding-right: 4em;
+  font-family: sans-serif;
+  font-size: 16pt;
+  resize: both;
+  overflow: auto;
 }
 .sidebar {
   height: 100%; /* 100% Full-height */
@@ -20,7 +24,7 @@ html{
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20pt;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -52,7 +56,7 @@ html{
 }
 /* The button used to open the sidebar */
 .openbtn  {
-  font-size: 20px;
+  /* -f-size: 20px; */
   cursor: pointer;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
@@ -60,7 +64,8 @@ html{
   border: none;
   display: inline-block;
   position: sticky;
-  padding-bottom: 30%;
+  padding-top: 40%;
+  padding-bottom: 40%;
 }
 
 .openbtn:hover {
@@ -80,38 +85,74 @@ html{
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
+  
 }
 h1{
-  font-family: 'Times New Roman', Times, serif;
+  max-width: 100%;
+  max-height: auto;
   font-style: oblique;
-  font-size: 40px;
+  font-size: 50pt;
   color: rgb(14, 14, 14);
   background: linear-gradient(rgb(255, 255, 255), rgb(0, 183, 255))
 }
+@media screen and (max-width: 350px){
+body{
+  text-align: center;
+  background-color:rgb(1, 67, 78);
+  align-content: center;
+  color: #111;
+ 
+  padding: 0% 0% 0% 0%;
+  width: auto;
+  height: auto;
+  object-fit: scale-down;
+  resize: both;
+  overflow: scroll;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+html{
+  padding: 0% 0% 0% 0%;
+  resize: both;
+  overflow: scroll;
+  width: auto;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+}
+
+
 body:not(#main){
   text-align: center;
   background-color:rgb(1, 67, 78);
   align-content: center;
-  font-family: 'Times New Roman', Times, serif;
   color: #111;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 3rem;
+  padding-left: 15%;
+  padding-right:15%;
+  padding-bottom: 10%;
+  top:0;
+  padding-top: 0px;
 }
 h2{
   background-color: white;
   padding-left: 0%;
   padding-right: 0%;
   display: inline-block;
+  font-size: 30pt;
 }
 
 h3{
   background-color: rgb(255, 182, 182);
   padding-left: 0%;
   padding-right: 0%;
-  font-family: 'Times New Roman', Times, serif;
+  
   font-style: normal;
-  font-size: 25px;
+  font-size: 25pt;
 }
 p, ul, ol{
 
@@ -119,12 +160,31 @@ p, ul, ol{
   background-color: white;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 .source{
   text-indent: -4em;
   margin: 6em initial;
   padding-left: 6rem;
   padding-right: 6rem;
+}
+img{
+  max-width: 100%;
+  max-height: auto;
+} 
+
+.arrow{
+  padding: 0%;
+  width: fit-content;
+  background-color: rgb(1, 67, 78);
+  color: rgb(255, 255, 255);
+  align-content: center;
+
+  
+}
+.aid{
+  font-size: 14pt;
+  font-style: oblique;
+  font-weight: 200; 
 }
